@@ -49,6 +49,13 @@
             margin-right: 45px;
         }
 
+        footer.standard-container {
+            position: relative;
+            margin-left: 45px;
+            margin-right: 45px;
+            padding: 20px;
+        }
+
         .trapezoid {
             position: relative;
             border-Top: 150px solid white;
@@ -56,78 +63,116 @@
             left: 500px;
         }
 
-        .h-underline {
-            border: 3px solid #eb8071;
-            border-radius: 10px;
-        }
-
-        .d-underline {
-            border: 6px solid #dd546e;
-            border-radius: 10px;
-            margin: 30px;
-        }
-
         .social-logos {
             display: inline-block;
             margin: 15px 5px 2px 10px;
         }
 
+        .main-container hr {
+            color: transparent;
+            height: 10px;
+            background: #dd546e;
+            border-radius: 10px;
+            margin: 30px;
+        }
+
+        .standard-container hr {
+            color: transparent;
+            height: 4px;
+            background: #eb8071;
+            border-radius: 10px;
+            margin: 0;
+        }
+
     </style>
 </head>
 
-<body>
+    <body>
+        <div class="main-container">
 
-<div class="main-container">
+            <header class="standard-container">
 
-    <header class="standard-container">
+                <div id=title-container>
+                    <h1>danihassanieh.dev</h1>
+                    <h3>My name is Dani Hassanieh, welcome to my website!</h3>
+                </div>
 
-        <div id=title-container>
-            <h1>danihassanieh.dev</h1>
-            <h3>My name is Dani Hassanieh, welcome to my website!</h3>
+                <div class="trapezoid"></div>
+
+            </header>
+
+            <hr />
+            <hr />
+
+            <div class="standard-container">
+                <h3>About me</h3>
+                <hr />
+
+                <p>
+                    I am an 18-year-old sophomore at The University of Texas at Dallas pursuing a double degree in Computer Science and Mathematics.
+                </p>
+            </div>
+
+            <div class="standard-container">
+                <h3>Skills</h3>
+                <hr />
+
+                <dl>
+                    <dt>Languages</dt>
+                    <dd>C/C++, Java, Python, HTML, CSS, MIPS<br /><br /></dd>
+
+                    <dt>Tools</dt>
+                    <dd>Git</dd>
+                </dl>
+            </div>
+
+            <div class="standard-container">
+                <h3>Coursework</h3>
+                <hr />
+
+                <p>Differential Calculus, Discrete Mathematics 1, Computer Science 2</p>
+
+            </div>
+
+            <div class="standard-container">
+                <h3>Projects</h3>
+                <hr />
+
+                <dl>
+                    <dt>danihassanieh.dev</dt>
+                    <dd>This website!<br /><br /></dd>
+
+                    <dt>Home-Hosted Minecraft Server</dt>
+                    <dd>Hosted a Minecraft server on Ubuntu Server from home.
+                        Uses bash scripts to automate startup and close of the server at set hours in the day,
+                        and has 5 concurrent players.</dd>
+                </dl>
+            </div>
+
+            <div class="standard-container">
+                <h3>Links</h3>
+                <hr />
+
+                <a class="social-logos" href="https://github.com/DaniHassanieh">
+                    <img alt="GitHub" height="52" src="images/github-mark-white.png">
+                </a>
+
+                <a class="social-logos" href="https://www.linkedin.com/in/danihassanieh/">
+                    <img alt="LinkedIn" src="images/In-White-26@2x.png"><br>
+                </a>
+
+                <address>
+                    <p>Email: <a href="mailto:dani.hassanieh@outlook.com">dani.hassanieh@outlook.com</a></p>
+                </address>
+            </div>
+
+            <hr />
+
+            <footer class="standard-container"></footer>
         </div>
 
-        <div class="trapezoid"></div>
+        <script>
 
-    </header>
-
-    <div class="d-underline"></div>
-
-    <div class="standard-container">
-
-        <h3>About me</h3>
-
-        <div class="h-underline"></div>
-
-        <p>
-            I am an 18-year-old sophomore at The University of Texas at Dallas pursuing a double degree in Computer Science and Mathematics.
-        </p>
-
-    </div>
-
-    <div class="standard-container">
-
-        <h3>Links</h3>
-
-        <div class="h-underline"></div>
-
-        <a class="social-logos" href="https://github.com/DaniHassanieh">
-            <img alt="GitHub" height="52" src="images/github-mark-white.png">
-        </a>
-
-        <a class="social-logos" href="https://www.linkedin.com/in/danihassanieh/">
-            <img alt="LinkedIn" src="images/In-White-26@2x.png"><br>
-        </a>
-
-    </div>
-
-    <div class="d-underline"></div>
-
-    <header class="standard-container" style="padding: 20px"></header>
-
-</div>
-
-<script>
-
-</script>
-</body>
+        </script>
+    </body>
 </html>
